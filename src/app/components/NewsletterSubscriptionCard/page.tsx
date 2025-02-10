@@ -25,7 +25,6 @@ export default function NewsletterSubscriptionCard() {
 
   const intervalRef = useRef<NodeJS.Timeout | null>(null);
 
-  // Function to fetch token using admin credentials
   const getAuthToken = async (): Promise<string | null> => {
     const formData = new FormData();
 
